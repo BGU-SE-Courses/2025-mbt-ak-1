@@ -68,6 +68,7 @@ public class StepDefinitions {
     public void UserOpensTheOpenCartMainPage() {
         System.setProperty(webDriver, path);
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.get("http://localhost/opencart/upload");     // Check if upload is necessary
         System.out.println("Opened OpenCart main page!");
     }
@@ -115,7 +116,7 @@ public class StepDefinitions {
 
         // Optionally, use an assertion to fail the test if MacBook is not found
         assert cellText.contains("MacBook") : "MacBook is not present in the order summary!";
-        sleep(2000);
+        sleep(5000);
         // Close the browser
         driver.quit();
     }
@@ -125,6 +126,7 @@ public class StepDefinitions {
         System.setProperty(webAdminDriver, path);
         adminDriver = new ChromeDriver();
         AdminWait = new WebDriverWait(adminDriver, Duration.ofSeconds(40L));
+        adminDriver.manage().window().maximize();
         adminDriver.get("http://localhost/opencart/upload/myadmin");     // Check if upload is necessary
         System.out.println("Opened OpenCart Admin login page!");
     }
