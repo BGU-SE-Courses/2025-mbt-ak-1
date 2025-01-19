@@ -2,9 +2,9 @@
 This is a repository for the system-testing assignment of the Software Quality Engineering course at the [Ben-Gurion University](https://in.bgu.ac.il/), Israel.
 
 ## Assignment Description
-In this assignment, we tested an open-source software called [$$*TODO* software name$$](https://address-of-the-project.com).
+In this assignment, we tested an open-source software called [OpenCart](https://address-of-the-project.com).
 
-$$*TODO* Add some general description about the software$$
+General Description: The software implements a mobile store. Users can add or remove items and buy products.
 
 ## Installation
 $$*TODO* Write instructions on how to install the software and prepare the testing environment$$
