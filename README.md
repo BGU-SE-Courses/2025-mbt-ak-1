@@ -7,26 +7,40 @@ In this assignment, we tested an open-source software called [OpenCart](https://
 General Description: The software implements a mobile store. Users can add or remove items and buy products.
 
 ## Installation
-$$*TODO* Write instructions on how to install the software and prepare the testing environment$$
+Instructions: To install OpenCart and set up the testing environment, follow these steps:
+
+Download the latest release of OpenCart from the official website.
+Download and install XAMPP server.
+Follow the installation instructions provided in the OpenCart documentation.
+Set up the enviorement and configure the necessary settings.
+
 
 ## What we tested
-$$*TODO* Add a description of the module and the user stories that you chose to test.
-For example, in the case of the Moodle example, you can write something like this:
+*Module and User Stories:*
+We tested the OpenCart that allows for adding and checks out products. We chose to test the following user stories:
 
-We tested the quiz module that allows for creating and taking quizzes. We chose to test the following user stories: 
+*Module and User Stories:*
 
-*User story:* A teacher adds a new quiz to the course with two yes/no questions
+### User Checks Out a Product
 
-*Preconditions:* There is a course with a teacher
+- *User story:* User checks out a product.
+   - *Preconditions:* The user is in OpenCart main page.
+   - *Steps:*
+      1. User adds product to the shopping cart.
+      2. User navigates to the shopping cart.
+      3. User Clicks on the "Checkout" button.
+   - *Expected outcome:* The user sees the checkout page, with the chosen product in the order summery.
 
-*Expected outcome:* The quiz is added to the course.
+### Admin Changes a Product's Price
 
-*User story:* A students attempts a quiz and answers correctly.
-
-*Preconditions:* There is a course with a quiz with two yes/no questions and the quiz grade is calculated automatically and the grade is visible to the students upon submission.
-
-*Expected outcome:* The student receives 100.
-$$
+- *User story:* Admin changes product price.
+   - *Preconditions:* The admin is in the login page.
+   - *Steps:*
+      1. Admin logs in to the system.
+      2. The admin navigates to the product's catalog page.
+      3. The admin selects a product.
+      4. The admin changes the product's price. 
+   - *Expected outcome:* The product's price is successfully updated, and the changes reflect across the system.
 
 ## How we tested
 We used two different testing methods:
