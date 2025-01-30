@@ -1,4 +1,4 @@
-# Software Quality Engineering - System Testing
+    # Software Quality Engineering - System Testing
 This is a repository for the system-testing assignment of the Software Quality Engineering course at the [Ben-Gurion University](https://in.bgu.ac.il/), Israel.
 
 ## Assignment Description
@@ -56,11 +56,7 @@ Update all README.md files (except for d-e, see Section 1). Specifically, replac
 We detected the following bugs:
 
 1. Bug 1: 
-   1. General description: ...
-   2. Steps to reproduce: ...
-   3. Expected result: ...
-   4. Actual result: ...
-   5. Link to the bug report: (you are encouraged to report the bug to the developers of the software)
-2. Bug 2: ...
-
-$$*TODO* if you did not detect the bug, you should delete this section$$  
+    1. General description: Whenever the graph is too big, it doesn't fit in the PDF.
+    2. Steps to reproduce: ./provengo analyze -f pdf testOpenCartSite
+    3. Expected result: PDF file with the graph
+    4. Actual result: PDF file with the graph, but the graph is too big and doesn't fit in the page so it's cut off.
